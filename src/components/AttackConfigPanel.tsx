@@ -29,7 +29,6 @@ import {
   Upload,
   Play,
   Pause,
-  Settings,
   FileText,
   RefreshCw,
 } from "lucide-react";
@@ -61,7 +60,7 @@ const AttackConfigPanel = ({
   // Simulate proxy testing with simple mock logic
   const handleTestProxies = () => {
     const lines = proxiesText
-      .split(/\n|,/)
+      .split(/[\n,]+/)
       .map((l) => l.trim())
       .filter(Boolean)
       .slice(0, 10);

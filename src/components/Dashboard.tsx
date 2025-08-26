@@ -16,7 +16,6 @@ import {
   RotateCcw,
   Shield,
   Settings,
-  Database,
   Server,
   Globe,
   FileText,

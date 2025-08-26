@@ -29,12 +29,9 @@ interface ProtocolTabsProps {
 
 const ProtocolTabs = ({
   onProtocolChange = () => {},
-  onParametersChange = () => {},
 }: ProtocolTabsProps) => {
-  const [activeProtocol, setActiveProtocol] = useState("http");
 
   const handleProtocolChange = (value: string) => {
-    setActiveProtocol(value);
     onProtocolChange(value);
   };
 
